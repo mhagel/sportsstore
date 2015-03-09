@@ -1,0 +1,16 @@
+/**
+ * Created by mark on 3/9/15.
+ */
+angular.module("sportsStore")
+.controller("sportsStoreCtrl", function ($scope) {
+
+        $scope.data = {
+            products: [
+                { name: "Product #1", description: "A product", category: "Category #1", price: 100 },
+                { name: "Product #2", description: "A product", category: "Category #1", price: 110 },
+                { name: "Product #3", description: "A product", category: "Category #2", price: 210 },
+                { name: "Product #4", description: "A product", category: "Category #3", price: 202 }]
+        };
+    });
+
+//the main role of the top-level controller is to define the data that will be used in the different views that the app will display
