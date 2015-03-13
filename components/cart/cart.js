@@ -33,7 +33,7 @@ angular.module("cart", [])
 		getProducts: function () {
 			return cartData;
 		}
-	})
+	}
 
 .directive("cartSummary", function (cart) {
 	return {
@@ -59,6 +59,5 @@ angular.module("cart", [])
 				return total;
 			}
 		}
-	}
-};
+	};
 });
