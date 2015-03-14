@@ -1,6 +1,9 @@
 angular.module("sportsStoreAdmin")
 .constant("authUrl", "http://localhost:5500/users/login")
+<<<<<<< HEAD
 .constant("ordersUrl", "http://localhost:5500/orders")
+=======
+>>>>>>> f693f82d62e8b53a1838389a396f614d9a7e856d
 .controller("authCtrl", function($scope, $http, $location, authUrl) {
 
         $scope.authenticate = function (user, pass) {
@@ -29,6 +32,7 @@ angular.module("sportsStoreAdmin")
             return $scope.current == "Products"
             ? "/views/adminProducts.html" : "/views/adminOrders.html";
         };
+<<<<<<< HEAD
     })
     .controller("ordersCtrl", function ($scope, $http, ordersUrl) {
 
@@ -53,4 +57,6 @@ angular.module("sportsStoreAdmin")
             }
             return total;
         }
+=======
+>>>>>>> f693f82d62e8b53a1838389a396f614d9a7e856d
     });
